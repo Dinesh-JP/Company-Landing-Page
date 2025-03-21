@@ -1,0 +1,307 @@
+/*Reset*/
+
+*{
+  box-sizing: border-box;
+
+  /*resetting padding and margin*/
+  padding: 0;
+  margin: 0;
+
+
+}
+
+  
+  html{
+      /*typoghraphy*/
+  font-size: 18px;
+  }
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.55;
+    color: rgb(60, 58, 71);
+  }
+
+  h1{
+    font-size: 3.15rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+  }
+
+  h2{
+    font-size: 1.75rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+    color: rgba(60, 58, 71, .8);
+  }
+
+  h3{
+    font-size: 2.40rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+  }
+  
+  h3.large{
+    font-size: 3.15rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-top: 32px;
+  }
+
+  .dark h3{
+    color: rgb(255, 255, 255);
+  }
+
+
+  h4{
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+
+  p{
+    margin-bottom: 1rem;
+  }
+
+  .section-intro{
+    font-size: 1rem;
+    color: rgba(60, 58, 71, .8);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+
+  .dark .section-intro{
+    color: rgba(255, 255, 255, .8);
+  }
+  p.number{
+    font-weight: 300;
+    font-size: 2.4rem;
+    color: rgba(60, 58, 71, .5);
+  }
+
+  p.large{
+    font-size: 1.75rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+  }
+  a{
+    text-decoration: none;
+    color: rgb(159, 118, 87);
+    font-weight: 700;
+  }
+
+  a:hover{
+    color: rgb(255, 255, 255);
+  }
+
+  form input,
+  form textarea,
+  form button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.55rem;
+  }
+
+  /*Container*/
+  .container{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .container.small{
+    width: 60%; 
+    max-width: 640px;
+  }
+
+  /*header*/
+  #main-header,
+  section
+  {
+    padding: 240px 0;
+    text-align: center;
+
+  }
+
+  #main-header h1{
+    margin: 7rem 0 1rem 0;
+  }
+
+  #main-header h2{
+    margin-bottom: 7rem;
+  }
+
+  .btn{
+    border: 1px solid rgb(159, 118, 87) ;
+    border-radius: 50px;
+    padding: 24px 64px;
+    font-weight: 700;
+  }
+
+  .btn:hover{
+    border-color: transparent;
+    background-color: black ;/*rgba(159, 118, 87, .7);*/
+  }
+
+
+/*chair section*/
+  #our-chairs{
+    background-color: #EFF0EA;
+  }
+
+  section header{
+    margin-bottom: 3.5rem;
+  }
+
+  h3 + p{
+    max-width: 35rem;
+    margin: auto;
+  }
+
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.5rem;    
+    margin-bottom: 3.5rem;
+  }
+
+  img{
+    max-width: 100%;;
+  }
+
+  .gallery div{
+    text-align: left;
+  }
+
+  .gallery img{
+    margin-bottom: 24px;
+  }
+
+  /*contact*/
+
+  .dark{
+    background-color: rgb(60, 58, 71);
+  }
+
+  .dark label{
+    color: rgba(255, 255, 255, .8);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: start;
+    display: block;
+    margin-bottom: .5rem;
+  }
+
+  form div{
+    margin-bottom: 1.75rem;
+  }
+
+  form input,
+  form textarea{
+    background-color:  rgba(255, 255, 255, .1);
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    color: white;
+    resize: none;
+  }
+
+  form input:focus, form textarea:focus{
+    outline: none;  
+    background-color:  rgba(255, 255, 255, .3);
+  }
+
+  form .btn{
+    width: 100%;
+    background-color: transparent;
+    border-color: white;
+    color:white;
+    cursor: pointer;
+  }
+
+  form .btn:hover{
+    background-color: white;
+    border: none;
+    color: rgb(60, 58, 71);
+  }
+
+  .muted{
+    color: rgba(255, 255, 255, .5);
+    margin-top: 32px;
+  }
+
+  /* contact  */
+
+  .social-icons{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  p.large + .social-icons{
+    margin-top: 7rem;
+  }
+
+  footer p{
+    padding: 96px 0;
+  }
+
+  footer{
+    text-align: center;
+  }
+
+  @media screen and (max-width: 600px){
+    h1,h3.large {
+      font-size: 2.3rem;
+    }
+    h2,p.large {
+      font-size: 1.3rem;
+    }
+    h3{
+      font-size: 1.8rem;
+    }
+
+    .container.small{
+      width: 85%;
+    }
+
+    #main-header, section{
+       padding: 6rem 0;
+    }
+
+    footer{
+      padding: 2.5
+      rem 0;
+    }
+    p.large + .social-icons{
+      margin-top: 5rem;
+    }
+
+    #main-header h1{
+      margin-top: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 800px){
+    .gallery{
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+ 
+
+        
+  }
+
+
+
+
+
+
+
+
+
+
+
+  
